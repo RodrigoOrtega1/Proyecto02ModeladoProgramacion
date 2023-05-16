@@ -23,6 +23,15 @@ public class Perro {
      * Disponibilidad del perro
      */
     private boolean enAdopcion;
+
+    public Perro(String nombre, int edad, String tamano, String raza, String descripcion, boolean enAdopcion){
+        this.nombre = nombre;
+        this.edad = edad;
+        this.tamano = tamano;
+        this.raza = raza;
+        this.descripcion = descripcion;
+        this.enAdopcion = enAdopcion;
+    }
     
     public String getNombre() {
         return nombre;
