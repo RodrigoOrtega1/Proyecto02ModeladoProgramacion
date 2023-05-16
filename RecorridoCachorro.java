@@ -1,21 +1,22 @@
 public class RecorridoCachorro implements Recorrido {
 
     @Override
-    public void alimentar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'alimentar'");
+    public String alimentar() {
+        return "Alimentaras a cachorros";
     }
 
     @Override
-    public void cepillar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cepillar'");
+    public String cepillar() {
+        return "Cepillaras a los cachorros";
     }
 
     @Override
-    public void extra() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'extra'");
+    public String extra() {
+        return "Jugaras con los cachorros";
     }
-    
+
+    @Override
+    public String recorrido() {
+       return alimentar() + "\n" + cepillar() + "\n" + extra();
+    }
 }

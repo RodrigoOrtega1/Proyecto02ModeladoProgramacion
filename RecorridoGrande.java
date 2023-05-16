@@ -1,21 +1,22 @@
 public class RecorridoGrande implements Recorrido{
-
     @Override
-    public void alimentar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'alimentar'");
+    public String alimentar() {
+        return "Alimentaras a los perros grandes";
     }
 
     @Override
-    public void cepillar() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'cepillar'");
+    public String cepillar() {
+        return "Cepillaras a los perros grandes";
     }
 
     @Override
-    public void extra() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'extra'");
+    public String extra() {
+        return "Veras una carrera de obstaculos";
+    }
+
+    @Override
+    public String recorrido() {
+       return alimentar() + "\n" + cepillar() + "\n" + extra();
     }
     
 }

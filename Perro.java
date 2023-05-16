@@ -51,4 +51,28 @@ public class Perro {
     public boolean isEnAdopcion() {
         return enAdopcion;
     }
+
+    public void setNombre(String nombre) {
+        this.nombre = nombre;
+    }
+
+    public void setEdad(int edad) {
+        this.edad = edad;
+    }
+
+    public void setTamano(String tamano) {
+        this.tamano = tamano;
+    }
+
+    public void setRaza(String raza) {
+        this.raza = raza;
+    }
+
+    public void setDescripcion(String descripcion) {
+        this.descripcion = descripcion;
+    }
+
+    public void setEnAdopcion(boolean enAdopcion) {
+        this.enAdopcion = enAdopcion;
+    }
 }

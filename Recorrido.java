@@ -1,5 +1,6 @@
 public interface Recorrido {
-    void alimentar();
-    void cepillar();
-    void extra();
+    String alimentar();
+    String cepillar();
+    String extra();
+    String recorrido();
 }
