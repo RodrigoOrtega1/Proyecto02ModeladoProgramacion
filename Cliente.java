@@ -1,4 +1,4 @@
-public class Cliente {
+public class Cliente implements InterfazCliente{
     /**
      * Nombre de un usuario
      */
@@ -28,5 +28,4 @@ public class Cliente {
     public String getCuentaBancaria() {
         return cuentaBancaria;
     }
-    
 }
