@@ -20,7 +20,7 @@ public class Perro {
      */
     private String descripcion;
     /**
-     * Si un perro puede ser adoptado
+     * Si un perro puede ser adoptado o no
      */
     private boolean enAdopcion;
 
