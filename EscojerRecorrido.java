@@ -1,6 +1,9 @@
 import java.util.Scanner;
 
 public class EscojerRecorrido {
+    /**
+     * Permite al usuario escojer un recorrido de los establecidos
+     */
     public void escojerRecorrido(){
         Scanner scanner = new Scanner(System.in);
         Recorrido recorrido;
@@ -25,6 +28,10 @@ public class EscojerRecorrido {
         }
     }
 
+    /**
+     * Mensaje personalizado que se mostrara al usuario
+     * @param recorrido tipo de recorrido que seguira el usuario
+     */
     private void mensajeDelRecorrido(Recorrido recorrido){
         System.out.println("--- Gracias por programar un recorrido con Refugio Cheems ---");
         System.out.println("Te esperamos con alegria el dia 29-5-2023");

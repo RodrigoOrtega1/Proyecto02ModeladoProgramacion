@@ -3,6 +3,9 @@ import java.util.Collections;
 import java.util.Scanner;
 
 public class TiendaDePasteles {
+    /**
+     * Permite al usuario comprar en la tienda de pasteles
+     */
     public void tiendaDePasteles(){
         boolean isOver = false;
         Scanner scanner = new Scanner(System.in);

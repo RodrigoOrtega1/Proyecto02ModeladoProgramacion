@@ -11,6 +11,10 @@ public class RefugioDePerros {
     Donar donar = new Donar();
     CambiarDatos cambiarDatos = new CambiarDatos();
     
+    /**
+     * Checa si el cliente existe
+     * @return Si el cliente existe, lo regresa
+     */
     public Cliente validarUsuario(){
         Scanner scanner = new Scanner(System.in);
         Cliente c = new Cliente(null, null, null, null);
@@ -32,6 +36,9 @@ public class RefugioDePerros {
         return c;
     }
 
+    /**
+     * Muestra al usuario a todos los perros
+     */
     public void mostrarPerros(){
         Perro perro = null;
         PerroView perroView = new PerroView();
@@ -43,6 +50,10 @@ public class RefugioDePerros {
         }
     }
 
+    /**
+     * Menu para que el usuario interactue con el programa
+     * @param c el usuario
+     */
     public void menu(ClienteProxy c){
         Scanner scanner = new Scanner(System.in);
         int counter = 10;
@@ -75,6 +86,9 @@ public class RefugioDePerros {
         }
     }
 
+    /**
+     * Muestra la pantalla de iniciar sesion
+     */
     public void pantallaPrincipal(){
         Scanner scanner = new Scanner(System.in);
         int counter = 0;

@@ -8,6 +8,9 @@ public class Donar {
     LinkedList<Donativo> listaDeDonativos = new LinkedList<>();
     LinkedList<Donativo> productosDonados = new LinkedList<>();
 
+    /**
+     * Llena la lista de donativos usando iterator
+     */
     public void populateList(){
         while(iterator.hasNext()){
             Donativo donativo = (Donativo) iterator.next();
@@ -15,6 +18,9 @@ public class Donar {
         }
     }
 
+    /**
+     * Permite que el usuario done
+     */
     public void donar(){
         populateList();
         DonativoView donativoView = new DonativoView();

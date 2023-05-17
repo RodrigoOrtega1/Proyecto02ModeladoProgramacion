@@ -3,14 +3,25 @@ import java.util.Iterator;
 
 public class ListaDePerros {
     private LinkedList<Perro> listaDePerros = new LinkedList<>();
+    
+    /**
+     * Constructor de ListaDePerros
+     */
     public ListaDePerros(){
         inicializar();
     }
 
+    /**
+     * Regresa la lista de perros
+     * @return
+     */
     public LinkedList<Perro> getLista(){
         return listaDePerros;
     }
 
+    /**
+     * Llena la lista con objetos tipo perro
+     */
     public void inicializar(){
         listaDePerros.add(new Perro("Fido", 2, "Mediano", "Mestizo", "Alegre", true));
         listaDePerros.add(new Perro("Luna", 1, "Pequena", "Pomerania", "Inteligente", true));
@@ -34,6 +45,10 @@ public class ListaDePerros {
         listaDePerros.add(new Perro("Oso", 2, "Grande", "Mestizo", "Inteligente", true));
     }
 
+    /**
+     * Regresa el iterador de la lista de perros
+     * @return iterador de la lista de perros
+     */
     public Iterator getIterator(){
         return listaDePerros.iterator();
     }

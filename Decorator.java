@@ -11,9 +11,15 @@ public abstract class Decorator implements Pastel{
     public Decorator(Pastel pastel){
         this.pastel = pastel;
     }
+    /**
+     * Regresa la descripcion del pastel
+     */
     public String getDescripcion(){
         return pastel.getDescripcion();
     }
+    /**
+     * Regresa el costo del pastel
+     */
     public int getCosto(){
         return pastel.getCosto();
     }

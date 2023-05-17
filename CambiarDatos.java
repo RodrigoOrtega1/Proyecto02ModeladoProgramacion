@@ -1,6 +1,10 @@
 import java.util.Scanner;
 
 public class CambiarDatos {
+    /**
+     * Metodo para que el usuario cambie datos personales
+     * @param c Representa al usuario
+     */
     public void cambiarDatos(ClienteProxy c){
         Scanner scanner = new Scanner(System.in);
         String nuevaInformacion;
@@ -42,6 +46,12 @@ public class CambiarDatos {
         }
     }
 
+    /**
+     * Checa que los valores insertados sean validos
+     * @param scanner donde entran los datos
+     * @param message mensaje a mostrar
+     * @return la cadena si es valida
+     */
     private String cacharErrorString(Scanner scanner, String message){
         while(true){
             try {
