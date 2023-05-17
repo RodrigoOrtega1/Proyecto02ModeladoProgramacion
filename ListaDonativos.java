@@ -28,6 +28,12 @@ public class ListaDonativos {
         listaDonativos.add(new Donativo("Pelota", "50", 3));
         listaDonativos.add(new Donativo("Hueso de jugete", "50", 4));
         listaDonativos.add(new Donativo("Jugete chillon", "50", 5));
+        listaDonativos.add(new Donativo("Medicina", "200", 6));
+        listaDonativos.add(new Donativo("Shampoo para perros", "150", 7));
+        listaDonativos.add(new Donativo("Articulos de limpieza", "100", 8));
+        listaDonativos.add(new Donativo("Agua", "80", 9));
+        listaDonativos.add(new Donativo("Carnasa", "20", 10));
+        listaDonativos.add(new Donativo("Mantenimiento", "50", 11));
     }
 
     /**
