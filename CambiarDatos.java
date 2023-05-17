@@ -34,12 +34,4 @@ public class CambiarDatos {
             default: System.out.println("Por favor inserte un valor correcto");
         }
     }
-
-    public static void main(String[] args){
-        Cliente cliente = new Cliente("Eduardo", "123", "231-323", "VAC213ADD");
-        ClienteProxy proxy = new ClienteProxy(cliente);
-        CambiarDatos cambiarDatos = new CambiarDatos();
-        cambiarDatos.cambiarDatos(proxy);
-        System.out.print(proxy.getContrasena() + " " + proxy.getCuentaBancaria() + " " + proxy.getTelefono());
-    }
 }

@@ -21,7 +21,6 @@ public class TiendaDePasteles {
                     [5] Crema de cacahuate
                     [6] Pure de calabaza
                     [7] Terminar orden
-                    [8] Terminar ejecucion
                     """);
                     userInput = Integer.parseInt(scanner.next());
                     break;
@@ -62,9 +61,6 @@ public class TiendaDePasteles {
                     break;
                 case 7:
                     System.out.println("Ticket:\n" + "Su orden:\n" + pastel.getDescripcion() + "\n" +  "Costo total:\n" + pastel.getCosto() + "\n Gracias por su apoyo!");
-                    isOver = true;
-                    break;
-                case 8:
                     isOver = true;
                     break;
                 default:
