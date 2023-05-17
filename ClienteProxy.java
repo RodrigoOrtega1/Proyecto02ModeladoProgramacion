@@ -2,6 +2,10 @@ public class ClienteProxy implements InterfazCliente{
 
     private Cliente clienteReal;
 
+    /**
+     * Constructor por defecto de ClienteProxy
+     * @param clienteReal
+     */
     public ClienteProxy(Cliente clienteReal){
         this.clienteReal = clienteReal;
     }

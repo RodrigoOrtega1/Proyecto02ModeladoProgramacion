@@ -20,10 +20,19 @@ public class Perro {
      */
     private String descripcion;
     /**
-     * Disponibilidad del perro
+     * Si un perro puede ser adoptado o no
      */
     private boolean enAdopcion;
 
+    /**
+     * Define el estado inicial de un perro.
+     * @param nombre del perro
+     * @param edad del perro
+     * @param tamano del perro
+     * @param raza del perro
+     * @param descripcion del perro
+     * @param enAdopcion si el perro puede ser adoptado
+     */
     public Perro(String nombre, int edad, String tamano, String raza, String descripcion, boolean enAdopcion){
         this.nombre = nombre;
         this.edad = edad;
