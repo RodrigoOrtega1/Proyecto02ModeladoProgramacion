@@ -8,7 +8,7 @@ public class ClienteProxy implements InterfazCliente{
 
     @Override
     public String getUsuario() {
-        return clienteReal.getUsuario(); //TODO: QUE MVC USE PROXY
+        return clienteReal.getUsuario();
     }
     
 }
