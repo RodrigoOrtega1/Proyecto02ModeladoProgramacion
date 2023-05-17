@@ -1,6 +1,17 @@
 public class Donativo {
+    /**
+     * Nombre del donativo
+     */
     private String nombre;
+    
+    /**
+     * Precio del donativo
+     */
     private String precio;
+    
+    /**
+     * Identificador del donativo
+     */
     private int identificador;
 
     /**
