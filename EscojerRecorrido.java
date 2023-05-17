@@ -6,7 +6,7 @@ public class EscojerRecorrido {
         Recorrido recorrido;
         System.out.println("Por favor escoja el tipo de recorrido que desee programar:");
         System.out.println("[1] Recorrido con cachorros");
-        System.out.println("[2] Recorrido con perros de mediana estatura");
+        System.out.println("[2] Recorrido con perros de medianos");
         System.out.println("[3] Recorrido con perros grandes");
         int userInput = scanner.nextInt();
         switch(userInput){
@@ -15,10 +15,5 @@ public class EscojerRecorrido {
             case 3: recorrido = new RecorridoGrande(); System.out.println(recorrido.recorrido()); break;
             default: System.out.println("Inserte un valor valido");
         }
-    }
-
-    public static void main(String[] args){
-        EscojerRecorrido escojerRecorrido = new EscojerRecorrido();
-        escojerRecorrido.escojerRecorrido();
     }
 }

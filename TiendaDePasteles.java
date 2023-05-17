@@ -73,9 +73,4 @@ public class TiendaDePasteles {
             }  
         }
     }
-
-    public static void main(String[] args){
-        TiendaDePasteles tiendaDePasteles = new TiendaDePasteles();
-        tiendaDePasteles.tiendaDePasteles();
-    }
 }

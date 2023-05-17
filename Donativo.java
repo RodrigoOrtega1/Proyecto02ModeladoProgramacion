@@ -1,10 +1,12 @@
 public class Donativo {
-    String nombre;
-    String precio;
+    private String nombre;
+    private String precio;
+    private int identificador;
 
-    public Donativo(String nombre, String precio){
+    public Donativo(String nombre, String precio, int identificador){
         this.nombre = nombre;
         this.precio = precio;
+        this.identificador = identificador;
     }
 
     public String getNombre() {
@@ -21,5 +23,13 @@ public class Donativo {
 
     public void setPrecio(String precio) {
         this.precio = precio;
+    }
+
+    public int getIdentificador() {
+        return identificador;
+    }
+
+    public void setIdentificador(int identificador) {
+        this.identificador = identificador;
     }
 }

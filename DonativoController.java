@@ -23,7 +23,15 @@ public class DonativoController {
         donativo.setPrecio(precio);
     }
 
+    public int getIdentificador() {
+        return donativo.getIdentificador();
+    }
+
+    public void setIdentificador(int identificador) {
+        donativo.setIdentificador(identificador);
+    }
+
     public void updateDonativoView(){
-        donativoView.viewDonativo(getNombre(), getPrecio());
+        donativoView.viewDonativo(getNombre(), getPrecio(), getIdentificador());
     }
 }

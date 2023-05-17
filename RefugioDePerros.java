@@ -6,6 +6,7 @@ public class RefugioDePerros {
     Iterator iteratorP = perrosIterador.getIteradorPerros();
     TiendaDePasteles tiendaDePasteles = new TiendaDePasteles();
     EscojerRecorrido escojerRecorrido = new EscojerRecorrido();
+    Donar donar = new Donar();
     
     public void mostrarPerros(){
         Perro perro = null;
@@ -25,6 +26,9 @@ public class RefugioDePerros {
             case 1: mostrarPerros(); break;
             case 2: tiendaDePasteles.tiendaDePasteles(); break;
             case 3: escojerRecorrido.escojerRecorrido(); break;
+            case 4: donar.donar(); break;
+            case 5: //cambiar datos
+            default: System.out.println("Por favor insertar un valor valido");
         }
     }
 
