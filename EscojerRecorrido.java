@@ -4,7 +4,7 @@ public class EscojerRecorrido {
     public void escojerRecorrido(){
         Scanner scanner = new Scanner(System.in);
         Recorrido recorrido;
-        System.out.println("Por favor escoja que tipo de recorrido quiere programar:");
+        System.out.println("Por favor escoja el tipo de recorrido que desee programar:");
         System.out.println("[1] Recorrido con cachorros");
         System.out.println("[2] Recorrido con perros de mediana estatura");
         System.out.println("[3] Recorrido con perros grandes");
