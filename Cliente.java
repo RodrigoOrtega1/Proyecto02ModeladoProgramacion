@@ -16,6 +16,13 @@ public class Cliente implements InterfazCliente{
      */
     private String cuentaBancaria;
     
+    public Cliente(String usuario, String contrasena, String telefono, String cuentaBancaria){
+        this.usuario = usuario;
+        this.contrasena = contrasena;
+        this.telefono = telefono;
+        this.cuentaBancaria = cuentaBancaria;
+    }
+
     public String getUsuario() {
         return usuario;
     }
