@@ -47,15 +47,13 @@ public class RefugioDePerros {
         Scanner scanner = new Scanner(System.in);
         int counter = 10;
         while(counter != 0){
-            System.out.println("""
-                Bienvenido al Refugio Cheems elija una opcion:
-                [1] Mostrar a los perros en adopcion.
-                [2] Tienda de pasteles.
-                [3] Programar un recorrido.
-                [4] Realizar una donacion.
-                [5] Editar datos personales.
-                [0] Salir
-                """);
+            System.out.println("Bienvenido al Refugio Cheems elija una opcion:");
+            System.out.println("[1] Mostrar a los perros en adopcion.");
+            System.out.println("[2] Tienda de pasteles.");
+            System.out.println("[3] Programar un recorrido.");
+            System.out.println("[4] Realizar una donacion.");
+            System.out.println("[5] Editar datos personales.");
+            System.out.println("[0] Salir");
             int userInput = scanner.nextInt();
             switch(userInput){
                 case 1: mostrarPerros(); break;

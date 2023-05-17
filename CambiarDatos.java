@@ -2,12 +2,10 @@ import java.util.Scanner;
 
 public class CambiarDatos {
     public void cambiarDatos(ClienteProxy c){
-        System.out.println("""
-                Elija que informacion personal desea editar:
-                [1] Contrasena
-                [2] Telefono
-                [3] Cuenta Bancaria
-                """);
+        System.out.println("Elija que informacion desea cambiar");
+        System.out.println("[1] Contrasena");
+        System.out.println("[2] Telefono");
+        System.out.println("[3] Cuenta Bancaria");
         Scanner scanner = new Scanner(System.in);
         int userInput = scanner.nextInt();
         scanner.nextLine();
