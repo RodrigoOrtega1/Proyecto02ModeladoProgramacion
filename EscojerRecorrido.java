@@ -28,7 +28,7 @@ public class EscojerRecorrido {
     private void mensajeDelRecorrido(Recorrido recorrido){
         System.out.println("--- Gracias por programar un recorrido con Refugio Cheems ---");
         System.out.println("Te esperamos con alegria el dia 29-5-2023");
-        System.out.println("En tu visita podras:");
+        System.out.println("En tu visita:");
         System.out.println(recorrido.recorrido());
         System.out.println("----");
     }
