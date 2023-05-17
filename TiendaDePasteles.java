@@ -12,16 +12,14 @@ public class TiendaDePasteles {
         while(!isOver){
             while(true){
                 try {
-                    System.out.print("""
-                    Personalize su pastel:
-                    [1] Zanahoria Rallada
-                    [2] Manzana Rallada
-                    [3] Miel
-                    [4] Yogurt
-                    [5] Crema de cacahuate
-                    [6] Pure de calabaza
-                    [7] Terminar orden
-                    """);
+                    System.out.println("Personalize su pastel");
+                    System.out.println("[1] Zanahoria Rallada");
+                    System.out.println("[2] Manzana Rallada");
+                    System.out.println("[3] Miel");
+                    System.out.println("[4] Yogurt");
+                    System.out.println("[5] Crema de cacahuate");
+                    System.out.println("[6] Pure de calabaza");
+                    System.out.println("[7] Terminar orden");
                     userInput = Integer.parseInt(scanner.next());
                     break;
                 } catch (NumberFormatException e) {
