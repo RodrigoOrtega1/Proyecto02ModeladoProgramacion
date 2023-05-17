@@ -46,15 +46,23 @@ public class RefugioDePerros {
     public void menu(ClienteProxy c){
         Scanner scanner = new Scanner(System.in);
         int counter = 10;
+        int userInput;
         while(counter != 0){
-            System.out.println("Bienvenido al Refugio Cheems elija una opcion:");
-            System.out.println("[1] Mostrar a los perros en adopcion.");
-            System.out.println("[2] Tienda de pasteles.");
-            System.out.println("[3] Programar un recorrido.");
-            System.out.println("[4] Realizar una donacion.");
-            System.out.println("[5] Editar datos personales.");
-            System.out.println("[0] Salir");
-            int userInput = scanner.nextInt();
+            while(true){
+                try{
+                    System.out.println("Bienvenido al Refugio Cheems elija una opcion:");
+                    System.out.println("[1] Mostrar a los perros en adopcion.");
+                    System.out.println("[2] Tienda de pasteles.");
+                    System.out.println("[3] Programar un recorrido.");
+                    System.out.println("[4] Realizar una donacion.");
+                    System.out.println("[5] Editar datos personales.");
+                    System.out.println("[0] Salir");    
+                    userInput = Integer.parseInt(scanner.next());
+                    break;
+                } catch (Exception e){
+                    System.out.println("Por favor inserte un valor valido");
+                }
+            }
             switch(userInput){
                 case 1: mostrarPerros(); break;
                 case 2: tiendaDePasteles.tiendaDePasteles(); break;
@@ -70,13 +78,23 @@ public class RefugioDePerros {
     public void pantallaPrincipal(){
         Scanner scanner = new Scanner(System.in);
         int counter = 0;
+        int userInput;
         while(counter != 2){
             System.out.println("""
                 [1] Iniciar Sesion
                 [2] Salir
                 """);
-        int userInput = scanner.nextInt();
-        switch(userInput){
+            while(true){
+                try{
+                    System.out.println("[1] Iniciar sesion");
+                    System.out.println("[2] Salir");
+                    userInput = Integer.parseInt(scanner.next());
+                    break;
+                } catch (Exception e){
+                    System.out.println("Por favor inserte un valor valido");
+                }
+            }
+            switch(userInput){
             case 1:
                 Cliente c = validarUsuario();
                 ClienteProxy proxy = new ClienteProxy(c);
@@ -84,7 +102,7 @@ public class RefugioDePerros {
                 break;
             case 2: counter = 2; break;
             default: System.out.println("Por favor insertar un valor valido");
-        }
+            }
         }
     }
 }
