@@ -22,9 +22,9 @@ public class RefugioDePerros {
         while(!usuarioValido){
             System.out.println("Ingrese su usuario");
             String usuarioIngresado = scanner.nextLine();
-            System.out.println("Ingrese su contraseña");
-            String contraseñaIngresada = scanner.nextLine();
-            if(baseDeClientes.containsKey(usuarioIngresado) && baseDeClientes.get(usuarioIngresado).getContrasena().equals(contraseñaIngresada)){
+            System.out.println("Ingrese su contrasena");
+            String contrasenaIngresada = scanner.nextLine();
+            if(baseDeClientes.containsKey(usuarioIngresado) && baseDeClientes.get(usuarioIngresado).getContrasena().equals(contrasenaIngresada)){
                 System.out.println("bienvenido de vuelta");
                 c = baseDeClientes.get(usuarioIngresado);
                 usuarioValido = true;
@@ -94,10 +94,6 @@ public class RefugioDePerros {
         int counter = 0;
         int userInput;
         while(counter != 2){
-            System.out.println("""
-                [1] Iniciar Sesion
-                [2] Salir
-                """);
             while(true){
                 try{
                     System.out.println("[1] Iniciar sesion");
