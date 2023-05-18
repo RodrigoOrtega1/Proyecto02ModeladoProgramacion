@@ -2,7 +2,7 @@ import java.util.Scanner;
 
 public class CambiarDatos {
     /**
-     * Metodo para que el usuario cambie datos personales
+     * Metodo para que el usuario actualice sus datos personales
      * @param c Representa al usuario
      */
     public void cambiarDatos(ClienteProxy c){
@@ -12,7 +12,7 @@ public class CambiarDatos {
         String message;
         while(true){
             try {
-                System.out.println("Elija que informacion desea cambiar");
+                System.out.println("Elija que informacion desea actualizar");
                 System.out.println("[1] Contrasena");
                 System.out.println("[2] Telefono");
                 System.out.println("[3] Cuenta Bancaria");

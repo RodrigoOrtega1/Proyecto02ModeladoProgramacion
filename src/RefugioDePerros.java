@@ -31,7 +31,7 @@ public class RefugioDePerros {
                 c = baseDeClientes.get(usuarioIngresado);
                 usuarioValido = true;
             } else {
-                System.out.println("ese usuario no existe");
+                System.out.println("datos incorrectos");
                 continue;
             }
         }
