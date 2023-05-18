@@ -1,5 +1,6 @@
 import java.util.HashMap;
 import java.util.Iterator;
+import java.util.LinkedList;
 import java.util.Scanner;
 
 public class RefugioDePerros {
@@ -8,6 +9,7 @@ public class RefugioDePerros {
     Iterator iteratorP = perrosIterador.getIteradorPerros();
     TiendaDePasteles tiendaDePasteles = new TiendaDePasteles();
     EscojerRecorrido escojerRecorrido = new EscojerRecorrido();
+    LinkedList<Perro> listaDePerros = new LinkedList<>();
     Donar donar = new Donar();
     CambiarDatos cambiarDatos = new CambiarDatos();
     
@@ -39,12 +41,18 @@ public class RefugioDePerros {
     /**
      * Muestra al usuario a todos los perros
      */
-    public void mostrarPerros(){
-        Perro perro = null;
-        PerroView perroView = new PerroView();
+    public void populatePerros(){
         while(iteratorP.hasNext()){
-            perro = (Perro) iteratorP.next();
-            PerroController perroController = new PerroController(perro, perroView);
+            Perro perro = (Perro) iteratorP.next();
+            listaDePerros.add(perro);
+        }
+    }
+
+    public void mostrarPerros(){
+        populatePerros();
+        PerroView perroView = new PerroView();
+        for(Perro p : listaDePerros){
+            PerroController perroController = new PerroController(p, perroView);
             perroController.updatePerroView();
             System.out.println("----");
         }
