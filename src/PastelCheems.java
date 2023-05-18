@@ -2,8 +2,8 @@ public class PastelCheems implements Pastel {
     private String descripcion;
     private int costo;
     public PastelCheems(){
-        descripcion = "Harina de avena";
-        costo = 1;
+        descripcion = "Base de masa de avena y platano";
+        costo = 20;
     }
 
     /**
