@@ -39,7 +39,7 @@ public class RefugioDePerros {
     }
 
     /**
-     * Muestra al usuario a todos los perros
+     * Usa PerrosIterator para llenar la lista de perros
      */
     public void populatePerros(){
         while(iteratorP.hasNext()){
@@ -48,6 +48,9 @@ public class RefugioDePerros {
         }
     }
 
+    /**
+     * Usando MVC muestra al usuario la lista de perros
+     */
     public void mostrarPerros(){
         populatePerros();
         PerroView perroView = new PerroView();
